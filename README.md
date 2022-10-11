@@ -1,7 +1,9 @@
 
-## **epyc-basic-auth**
+### **epyc-basic-auth**
 
-HTTP basic authentication middelware for epyc.
+HTTP basic authentication middelware for epyc. 
+
+Read more about [HTTP authentication](https://developer.mozilla.org/en-US/docs/Web/HTTP/Authentication).
 
 <br/>
 
@@ -20,7 +22,7 @@ const app = require("epyc");
 const isAuthenticated = require('epyc-basic-auth');
 
 app.get('/', 
-    isAuthenticated(({ username, password }) => username === 'John' && ...) 
+    isAuthenticated(({ username, password }) => username === 'John' && password === 'Doe') 
     (request, response) => response.send('Hello World')
 );
 
