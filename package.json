@@ -1,0 +1,26 @@
+{
+	"name": "epyc-basic-auth",
+	"version": "1.0.0",
+	"description": "HTTP basic authentication middelware for epyc.",
+	"main": "./src/index.js",
+	"homepage": "https://github.com/erwinkulasic/epyc#readme",
+	"scripts": {
+		"test": "mocha"
+	},
+	"keywords": [
+		"epyc",
+		"http",
+		"basic",
+		"authentication"
+	],
+	"engines": {
+		"node": ">= 6.0.0"
+	},
+	"author": "Erwin <erwinkulasic@gmail.com> (https://erwinkulasic.com)",
+	"license": "MIT",
+	"devDependencies": {
+		"axios": "^1.1.2",
+		"epyc": "^2.0.1",
+		"mocha": "^10.0.0"
+	}
+}
